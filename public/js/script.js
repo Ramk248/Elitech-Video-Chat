@@ -46,7 +46,7 @@ if (localStorage.getItem("meetUserName")) {
 // Establishing peer
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
-  host: "immense-everglades-45156.herokuapp.com",
+  host: "el-video-chat.herokuapp.com",
   port: 443,
   secure: true
   //ssl: {
@@ -68,7 +68,7 @@ var colors = ["#0078ff", "#bd00ff", "#ff9a00", "#00811f", "#e70000"];
 // Streaming my own audio/video
 navigator.mediaDevices
   .getUserMedia({
-    video: false,
+    video: true,
     audio: true,
   })
   .then((stream) => {
