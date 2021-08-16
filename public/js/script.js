@@ -46,7 +46,7 @@ if (localStorage.getItem("meetUserName")) {
 // Establishing peer
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
-  host: "elitech-video-chat.herokuapp.com",
+  host: "immense-everglades-45156.herokuapp.com",
   port: 443,
   secure: true
   //ssl: {
